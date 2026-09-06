@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfe6e2"/><stop offset="1" stop-color="#a9d3cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="330" cy="70" r="90" fill="#ffffff" opacity="0.25"/>
+  <circle cx="60" cy="330" r="60" fill="#ffffff" opacity="0.2"/>
+  <!-- shoulders / dress -->
+  <path d="M55 400c0-95 65-150 145-150s145 55 145 150z" fill="#1d6f6a"/>
+  <path d="M150 262c15 22 35 32 50 32s35-10 50-32" fill="none" stroke="#c98a3a" stroke-width="5" stroke-linecap="round"/>
+  <!-- hijab outer -->
+  <path d="M200 60c-70 0-110 55-110 130 0 40 12 70 30 92 8-30 22-52 30-70-8-22-12-40-12-58 0-40 28-70 62-70s62 30 62 70c0 18-4 36-12 58 8 18 22 40 30 70 18-22 30-52 30-92 0-75-40-130-110-130z" fill="#2b4a55"/>
+  <!-- hijab inner -->
+  <path d="M200 90c-40 0-70 32-70 78 0 30 12 55 30 72h80c18-17 30-42 30-72 0-46-30-78-70-78z" fill="#345c69"/>
+  <!-- face -->
+  <path d="M200 100c-33 0-56 26-56 66 0 34 22 64 56 64s56-30 56-64c0-40-23-66-56-66z" fill="#f2c9a8"/>
+  <!-- hair line -->
+  <path d="M148 150c8-35 30-52 52-52s44 17 52 52c-14-20-30-30-52-30s-38 10-52 30z" fill="#2b4a55"/>
+  <!-- eyes -->
+  <ellipse cx="180" cy="168" rx="7" ry="4.5" fill="#2b2b2b"/>
+  <ellipse cx="220" cy="168" rx="7" ry="4.5" fill="#2b2b2b"/>
+  <path d="M170 156q10-6 20 0M210 156q10-6 20 0" fill="none" stroke="#2b2b2b" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- nose & smile -->
+  <path d="M200 176q-4 12 3 14" fill="none" stroke="#d8a888" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M184 200q16 12 32 0" fill="none" stroke="#b5675a" stroke-width="3" stroke-linecap="round"/>
+  <!-- neck -->
+  <path d="M182 226h36v30c-10 8-26 8-36 0z" fill="#e9bd9b"/>
+  <!-- hijab drape across neck -->
+  <path d="M120 300c30-30 55-60 80-60s50 30 80 60c-40-25-60-20-80-20s-40-5-80 20z" fill="#2b4a55"/>
+</svg>
