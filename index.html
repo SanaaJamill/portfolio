@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sana Sabih — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Sana Sabih — educator turned front-end web developer. HTML, CSS and JavaScript projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="brand">Sana Sabih</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light mode">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HOME ===================== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Sana Sabih</h1>
+          <p class="hero-role">Front-End Web Developer &amp; Educator</p>
+          <p class="hero-intro">
+            I build clean, responsive websites with HTML, CSS and JavaScript.
+            With a background in teaching, I bring patience, clarity and
+            attention to detail to everything I create.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="cv/Sana_Sabih_CV.docx" download class="btn btn-outline">Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <!-- Replace images/profile.jpg with your own photo -->
+          <img src="images/profile.svg" alt="Sana Sabih" id="profilePhoto">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm Sana Sabih from Karachi, Pakistan. I hold a Master's degree in
+              Human Resource Management and have spent time working as an English
+              Conversation Instructor, where I learned how to explain difficult
+              ideas in a simple, friendly way.
+            </p>
+            <p>
+              Recently I moved into web development. I enjoy turning ideas into
+              real, working web pages — writing structured HTML, styling with
+              modern CSS, and adding interactivity with JavaScript. I am a quick
+              learner, hardworking and meticulous about the details.
+            </p>
+            <p>
+              My goal is to grow as a front-end developer and build websites
+              that are useful, accessible and pleasant to use.
+            </p>
+          </div>
+          <ul class="about-facts">
+            <li><span>Location</span> Karachi, Sindh, Pakistan</li>
+            <li><span>Education</span> MHRM (Master's)</li>
+            <li><span>Focus</span> HTML, CSS, JavaScript</li>
+            <li><span>Languages</span> English, Urdu</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <h3 class="skills-group-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="skill-head"><span>HTML5</span><span>90%</span></div>
+            <div class="bar"><div class="bar-fill" style="--w: 90%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>CSS3</span><span>85%</span></div>
+            <div class="bar"><div class="bar-fill" style="--w: 85%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>JavaScript</span><span>75%</span></div>
+            <div class="bar"><div class="bar-fill" style="--w: 75%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Responsive Design</span><span>85%</span></div>
+            <div class="bar"><div class="bar-fill" style="--w: 85%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Git &amp; GitHub</span><span>70%</span></div>
+            <div class="bar"><div class="bar-fill" style="--w: 70%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>MS Office</span><span>90%</span></div>
+            <div class="bar"><div class="bar-fill" style="--w: 90%"></div></div>
+          </div>
+        </div>
+
+        <h3 class="skills-group-title">Other Skills</h3>
+        <ul class="tags">
+          <li>Teaching &amp; Communication</li>
+          <li>English Language (Advanced)</li>
+          <li>Office Administration</li>
+          <li>Problem Solving</li>
+          <li>Career Counselling</li>
+          <li>Quick Learner</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+          <!-- Mid-Term Exam Project -->
+          <article class="project-card">
+            <div class="project-img">
+              <img src="images/midterm.png" alt="Coza Store clothing brand website screenshot">
+            </div>
+            <div class="project-body">
+              <h3>Coza Store — Clothing Brand Website <small>(Mid-Term Project)</small></h3>
+              <p>
+                A multi-page e-commerce style website for a clothing brand with
+                a hero slider, product shop page, features, about and contact
+                pages. Fully responsive with interactive JavaScript components.
+              </p>
+              <ul class="project-tech">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="projects/clothing-brand/index.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- To-Do Application -->
+          <article class="project-card">
+            <div class="project-img">
+              <img src="images/todo-app.png" alt="To-Do Application screenshot">
+            </div>
+            <div class="project-body">
+              <h3>To-Do Application</h3>
+              <p>
+                A simple task manager with full CRUD functionality — add new
+                todos, edit titles in place, and delete tasks. Built with
+                vanilla JavaScript using arrays and DOM manipulation.
+              </p>
+              <ul class="project-tech">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="projects/todo-app/index.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION / EXPERIENCE ===================== -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Education &amp; Experience</h2>
+
+        <div class="timeline-grid">
+          <div>
+            <h3 class="timeline-heading">Education</h3>
+            <ol class="timeline">
+              <li>
+                <time>2026</time>
+                <strong>Web Development Course</strong>
+                <span>HTML, CSS &amp; JavaScript</span>
+              </li>
+              <li>
+                <time>2017</time>
+                <strong>Masters in Human Resource Management (MHRM)</strong>
+              </li>
+              <li>
+                <time>2013</time>
+                <strong>Bachelors in Commerce (B.Com)</strong>
+              </li>
+              <li>
+                <time>2011</time>
+                <strong>Intermediate (Commerce)</strong>
+              </li>
+              <li>
+                <time>2009</time>
+                <strong>Matriculation (General Group)</strong>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="timeline-heading">Experience</h3>
+            <ol class="timeline">
+              <li>
+                <time>1 Year</time>
+                <strong>English Conversation Instructor</strong>
+                <span>Taught spoken English, built lesson plans and coached students in communication skills.</span>
+              </li>
+              <li>
+                <time>1 Month</time>
+                <strong>Admin Assistant (Internship) — Vision School</strong>
+                <span>Supported day-to-day office administration and record keeping.</span>
+              </li>
+              <li>
+                <time>Workshop</time>
+                <strong>CV Writing &amp; Interview Skills — ZAS Collegiate</strong>
+                <span>Conducted a workshop helping students prepare for jobs.</span>
+              </li>
+              <li>
+                <time>Workshop</time>
+                <strong>Career Counselling — MAC Collegiate</strong>
+                <span>Guided students on study and career choices.</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-intro">
+          Have a project in mind or want to say hello? I'd love to hear from you.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Put your LinkedIn profile URL here -->
+          <a class="contact-card" href="https://www.linkedin.com/in/sana-jamil" target="_blank" rel="noopener">
+            <span class="contact-icon">in</span>
+            <strong>LinkedIn</strong>
+            <span>Connect with me</span>
+          </a>
+
+          <a class="contact-card" href="https://wa.me/923422319857" target="_blank" rel="noopener">
+            <span class="contact-icon">💬</span>
+            <strong>WhatsApp</strong>
+            <span>+92 342 2319857</span>
+          </a>
+
+          <!-- Put your email address here -->
+          <a class="contact-card" href="mailto:sanaajamill19477@gmail.com">
+            <span class="contact-icon">✉</span>
+            <strong>Email</strong>
+            <span>sanaajamill19477@gmail.com</span>
+          </a>
+
+          <a class="contact-card" href="cv/Sana_Sabih_CV.docx" download>
+            <span class="contact-icon">⬇</span>
+            <strong>Download CV</strong>
+            <span>Word document</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p class="footer-name">Sana Sabih</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/sana-jamil" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://wa.me/923422319857" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:sanaajamill19477@gmail.com">Email</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span id="year"></span> Sana Sabih. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
