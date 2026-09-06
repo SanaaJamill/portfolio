@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Todo Application</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <h1>Simple Todo Application</h1>
+
+        <!-- Input Area -->
+        <div class="todo-input">
+
+            <input
+                type="text"
+                id="todoTitle"
+                placeholder="Enter Todo Title"
+            >
+
+            <button onclick="addTodo()">
+                Add Todo
+            </button>
+
+        </div>
+
+        <!-- Todo Table -->
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="todoList">
+
+                <!-- Todos JavaScript se yahan show honge -->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

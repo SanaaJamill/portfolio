@@ -1,0 +1,772 @@
+/* ==================================================
+   COZA STORE - ABOUT PAGE CSS
+================================================== */
+
+
+/* ==================================================
+   ABOUT BANNER
+================================================== */
+
+.about-banner {
+    width: 100%;
+    min-height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url(./images/bg-01.webp);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.about-banner-content {
+    text-align: center;
+    color: #fff;
+}
+
+.about-banner-content h1 {
+    margin: 0 0 12px;
+
+    font-size: 50px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.about-banner-content p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+.about-banner-content p span {
+    margin: 0 8px;
+}
+
+
+/* ==================================================
+   ABOUT STORY
+================================================== */
+
+.about-story {
+    padding: 90px 0;
+    background: #fff;
+}
+
+.about-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* ==================================================
+   ABOUT IMAGE
+================================================== */
+
+.about-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+
+    height: 470px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* ==================================================
+   ABOUT CONTENT
+================================================== */
+
+.about-content {
+    max-width: 520px;
+}
+
+.about-content h2 {
+    margin: 0 0 28px;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+.about-content p {
+    margin: 0 0 20px;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ==================================================
+   QUOTE
+================================================== */
+
+.about-content blockquote {
+    margin: 30px 0 10px;
+
+    padding-left: 22px;
+
+    border-left: 3px solid #717fe0;
+
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+}
+
+.about-content blockquote i {
+    color: #717fe0;
+
+    margin-right: 8px;
+}
+
+.about-content .author {
+    margin-left: 25px;
+
+    font-size: 13px;
+
+    color: #999;
+}
+
+
+/* ==================================================
+   OUR MISSION
+================================================== */
+
+.about-mission {
+    padding: 90px 0;
+
+    background: #f7f7f7;
+}
+
+.about-row.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* ==================================================
+   ABOUT BUTTON
+================================================== */
+
+.about-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 145px;
+
+    height: 45px;
+
+    margin-top: 15px;
+
+    padding: 0 25px;
+
+    background: #717fe0;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    border-radius: 2px;
+
+    transition: all 0.3s ease;
+}
+
+.about-button:hover {
+    background: #333;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   WHY CHOOSE US
+================================================== */
+
+.why-us {
+    padding: 90px 0;
+
+    background: #fff;
+}
+
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    margin: 0 0 12px;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+.section-title p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* ==================================================
+   WHY GRID
+================================================== */
+
+.why-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ==================================================
+   WHY CARD
+================================================== */
+
+.why-card {
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background: #fff;
+
+    border: 1px solid #eee;
+
+    transition: all 0.35s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==================================================
+   WHY ICON
+================================================== */
+
+.why-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    background: #f1f2ff;
+
+    color: #717fe0;
+
+    font-size: 22px;
+
+    transition: all 0.3s ease;
+}
+
+.why-card:hover .why-icon {
+    background: #717fe0;
+
+    color: #fff;
+}
+
+
+/* ==================================================
+   WHY CARD TEXT
+================================================== */
+
+.why-card h3 {
+    margin: 0 0 12px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #333;
+}
+
+.why-card p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #777;
+}
+
+
+/* ==================================================
+   STATISTICS
+================================================== */
+
+.about-stats {
+    padding: 70px 0;
+
+    background: #717fe0;
+}
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.stat-box {
+    text-align: center;
+
+    color: #fff;
+
+    padding: 15px;
+}
+
+.stat-box h2 {
+    margin: 0 0 10px;
+
+    font-size: 38px;
+
+    font-weight: 700;
+}
+
+.stat-box p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+    width: 100%;
+
+    background: #222;
+
+    padding: 70px 0 35px;
+
+    color: #fff;
+}
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 60px;
+}
+
+.footer-column h3 {
+    margin: 0 0 25px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #fff;
+}
+
+.footer-column a {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #717fe0;
+}
+
+.footer-column p {
+    max-width: 300px;
+
+    margin: 0;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* ==================================================
+   SOCIAL ICONS
+================================================== */
+
+.social-icons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+
+    border: 1px solid #555;
+
+    border-radius: 50%;
+
+    color: #aaa;
+
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #717fe0;
+
+    border-color: #717fe0;
+
+    color: #fff;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1000px) {
+
+    .about-row {
+        gap: 40px;
+    }
+
+    .about-image img {
+        height: 400px;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==================================================
+   TABLET SMALL
+================================================== */
+
+@media (max-width: 768px) {
+
+    .about-banner {
+        min-height: 220px;
+    }
+
+    .about-banner-content h1 {
+        font-size: 40px;
+    }
+
+
+    .about-story,
+    .about-mission,
+    .why-us {
+        padding: 65px 0;
+    }
+
+
+    .about-row,
+    .about-row.reverse {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .about-row.reverse .about-image {
+        order: -1;
+    }
+
+
+    .about-content {
+        max-width: 100%;
+    }
+
+
+    .about-image img {
+        height: 420px;
+    }
+
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 30px;
+    }
+
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+    .about-banner {
+        min-height: 190px;
+    }
+
+    .about-banner-content h1 {
+        font-size: 34px;
+    }
+
+    .about-banner-content p {
+        font-size: 13px;
+    }
+
+
+    .about-story,
+    .about-mission,
+    .why-us {
+        padding: 50px 0;
+    }
+
+
+    .about-content h2 {
+        font-size: 27px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .about-content p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .about-image img {
+        height: 330px;
+    }
+
+
+    .section-title {
+        margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+
+
+    .why-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+    }
+
+    .stat-box h2 {
+        font-size: 30px;
+    }
+
+    .stat-box p {
+        font-size: 12px;
+    }
+
+
+    .footer {
+        padding: 55px 0 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media (max-width: 400px) {
+
+    .about-image img {
+        height: 280px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   OUR STORY IMAGE
+========================================= */
+
+.our-story-image {
+    position: relative;
+
+    width: 50%;
+
+    padding: 20px;
+}
+
+
+/* Image */
+
+.our-story-image img {
+    position: relative;
+
+    width: 200%;
+
+    display: block;
+
+    z-index: 2;
+}
+
+
+/* Square behind image */
+
+.our-story-image::before {
+    content: "";
+
+    position: absolute;
+
+    top: 40px;
+    left: 0;
+
+    width: 167%;
+    height: 91%;
+
+    border: 3px solid #d3d3d3;
+
+    background: transparent;
+
+    z-index: 1;
+}
+/* =========================================
+   OUR MISSION IMAGE
+========================================= */
+
+.our-mission-image {
+    position: relative;
+    width: 50%;
+}
+
+
+/* Mission Image */
+
+.our-mission-image img {
+    width: 200%;
+    display: block;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Grey Square Behind Image */
+
+.our-mission-image::before {
+    content: "";
+
+    position: absolute;
+
+    top: 20px;
+    left: -20px;
+
+    width: 200%;
+    height: 99%;
+
+    border: 3px solid #d3d3d3;
+
+    background: transparent;
+
+    z-index: 1;
+}

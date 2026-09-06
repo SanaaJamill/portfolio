@@ -1,0 +1,222 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #eef5ff;
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+}
+
+
+/* Main Container */
+.container {
+    width: 700px;
+    max-width: 100%;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 80, 180, 0.15);
+}
+
+
+/* Heading */
+h1 {
+    text-align: center;
+
+    color: #1769aa;
+
+    font-size: 32px;
+
+    margin-bottom: 28px;
+}
+
+
+/* Input Section */
+.todo-input {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Input */
+.todo-input input {
+    flex: 1;
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 2px solid #1769aa;
+
+    border-radius: 6px;
+
+    outline: none;
+}
+
+
+/* Input Focus */
+.todo-input input:focus {
+    border-color: #0d47a1;
+}
+
+
+/* Add Todo Button */
+.todo-input button {
+    background-color: #1769aa;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Add Button Hover */
+.todo-input button:hover {
+    background-color: #0d47a1;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+/* Table Header */
+th {
+    background-color: #1769aa;
+
+    color: white;
+
+    padding: 13px;
+
+    font-size: 16px;
+}
+
+
+/* Table Data */
+td {
+    padding: 13px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #d6e4f5;
+
+    color: #333;
+}
+
+
+/* Alternate Row */
+tr:nth-child(even) {
+    background-color: #f4f8ff;
+}
+
+
+/* Row Hover */
+tr:hover {
+    background-color: #e8f2ff;
+}
+
+
+/* Edit Button */
+.edit-btn {
+    background-color: #f0ad4e;
+
+    color: white;
+
+    border: none;
+
+    padding: 9px 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-right: 5px;
+}
+
+
+/* Edit Hover */
+.edit-btn:hover {
+    background-color: #ec971f;
+}
+
+
+/* Delete Button */
+.delete-btn {
+    background-color: #d9534f;
+
+    color: white;
+
+    border: none;
+
+    padding: 9px 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+/* Delete Hover */
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .todo-input {
+        flex-direction: column;
+    }
+
+    .todo-input button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+
+}

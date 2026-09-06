@@ -1,0 +1,278 @@
+/* ================================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+.logo a {
+    font-size: 24px;
+    font-weight: 800;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+
+/* Navbar */
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #717fe0;
+}
+
+
+/* ================================
+   FEATURES HERO
+================================ */
+
+.features-hero {
+    height: 330px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ),
+    url("images/features-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+
+/* ================================
+   FEATURES SECTION
+================================ */
+
+.features-section {
+    padding: 80px 5%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* ================================
+   FEATURES CARDS
+================================ */
+
+.features-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    padding: 40px 30px;
+    border: 1px solid #eee;
+    background: #fff;
+    text-align: center;
+
+    transition: all 0.35s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Feature Icon */
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f5f5;
+
+    font-size: 30px;
+
+    transition: 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+
+/* Card Heading */
+
+.feature-card h3 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+
+/* Card Paragraph */
+
+.feature-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .navbar ul {
+        gap: 18px;
+    }
+
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .container {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .features-hero {
+        height: 260px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features-section {
+        padding: 60px 6%;
+    }
+}

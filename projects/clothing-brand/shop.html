@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>COZA STORE - Shop</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Shop CSS -->
+    <link rel="stylesheet" href="shop.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+
+    <!-- ==================================================
+         TOP BAR
+    ================================================== -->
+
+    <div class="top-bar">
+
+        <p>
+            Free shipping for standard order over $100
+        </p>
+
+        <div class="top-links">
+
+            <a href="#">Help & FAQs</a>
+            <a href="#">My Account</a>
+            <a href="#">EN</a>
+            <a href="#">USD</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         NAVBAR
+    ================================================== -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <a href="index.html">
+                    COZA <span>STORE</span>
+                </a>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="navbar">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html" class="active">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="features-link">
+
+                        <a href="./">
+                            Features
+                        </a>
+
+                        <span class="hot">
+                            HOT
+                        </span>
+
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Header Icons -->
+
+            <div class="header-icons">
+
+                <!-- Search -->
+
+                <a href="#" class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+
+                <!-- Cart -->
+
+                <a href="#" class="cart-icon">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span>
+                        0
+                    </span>
+
+                </a>
+
+
+                <!-- Wishlist -->
+
+                <a href="#" class="heart-icon">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                    <span>
+                        0
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu -->
+
+            <button class="menu-button">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         SHOP CONTENT
+    ================================================== -->
+
+    <main class="shop-page">
+
+
+        <div class="container">
+
+
+            <!-- ==================================================
+                 SHOP TOP
+            ================================================== -->
+
+            <div class="shop-top">
+
+
+                <!-- Categories -->
+
+                <div class="shop-categories">
+
+                    <a href="#" class="category active">
+                        All Products
+                    </a>
+
+                    <a href="#" class="category">
+                        Women
+                    </a>
+
+                    <a href="#" class="category">
+                        Men
+                    </a>
+
+                    <a href="#" class="category">
+                        Bag
+                    </a>
+
+                    <a href="#" class="category">
+                        Shoes
+                    </a>
+
+                    <a href="#" class="category">
+                        Watches
+                    </a>
+
+                </div>
+
+
+                <!-- Filter / Search -->
+
+                <div class="shop-actions">
+
+                    <button class="filter-button">
+
+                        <i class="fa-solid fa-filter"></i>
+
+                        Filter
+
+                    </button>
+
+
+                    <button class="search-button">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Search
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 FILTER AREA
+            ================================================== -->
+
+            <div class="filter-area">
+
+
+                <div class="filter-column">
+
+                    <h4>
+                        Sort By
+                    </h4>
+
+                    <select id="sort-products">
+
+                        <option value="default">
+                            Default
+                        </option>
+
+                        <option value="newest">
+                            Newest
+                        </option>
+
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-column">
+
+                    <h4>
+                        Price
+                    </h4>
+
+                    <select id="price-filter">
+
+                        <option value="all">
+                            All
+                        </option>
+
+                        <option value="0-50">
+                            $0 - $50
+                        </option>
+
+                        <option value="50-100">
+                            $50 - $100
+                        </option>
+
+                        <option value="100-150">
+                            $100 - $150
+                        </option>
+
+                        <option value="150+">
+                            $150+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-column">
+
+                    <h4>
+                        Color
+                    </h4>
+
+                    <select id="color-filter">
+
+                        <option value="all">
+                            All
+                        </option>
+
+                        <option value="black">
+                            Black
+                        </option>
+
+                        <option value="white">
+                            White
+                        </option>
+
+                        <option value="blue">
+                            Blue
+                        </option>
+
+                        <option value="grey">
+                            Grey
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 SEARCH AREA
+            ================================================== -->
+
+            <div class="search-area">
+
+                <input
+                    type="text"
+                    id="product-search"
+                    placeholder="Search products..."
+                >
+
+                <button id="search-products">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 PRODUCT GRID
+            ================================================== -->
+
+            <div class="product-grid">
+
+
+                <!-- PRODUCT 01 -->
+
+                <div class="product-card"
+                    data-category="Women"
+                    data-price="16.64"
+                    data-color="white">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-01.jpg"
+                            alt="Esprit Ruffle Shirt"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Esprit Ruffle Shirt
+                        </h3>
+
+                        <p>
+                            $16.64
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 02 -->
+
+                <div class="product-card"
+                    data-category="Women"
+                    data-price="35.31"
+                    data-color="white">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-02.jpg"
+                            alt="Herschel Supply"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Herschel Supply
+                        </h3>
+
+                        <p>
+                            $35.31
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 03 -->
+
+                <div class="product-card"
+                    data-category="Men"
+                    data-price="25.50"
+                    data-color="blue">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-03.jpg"
+                            alt="Only Check Trouser"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Only Check Trouser
+                        </h3>
+
+                        <p>
+                            $25.50
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 04 -->
+
+                <div class="product-card"
+                    data-category="Women"
+                    data-price="75.00"
+                    data-color="grey">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-04.jpg"
+                            alt="Classic Trench Coat"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Classic Trench Coat
+                        </h3>
+
+                        <p>
+                            $75.00
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 05 -->
+
+                <div class="product-card"
+                    data-category="Women"
+                    data-price="34.75"
+                    data-color="grey">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-05.jpg"
+                            alt="Front Pocket Jumper"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Front Pocket Jumper
+                        </h3>
+
+                        <p>
+                            $34.75
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 06 -->
+
+                <div class="product-card"
+                    data-category="Men"
+                    data-price="48.20"
+                    data-color="black">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-06.jpg"
+                            alt="Vintage Jacket"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Vintage Jacket
+                        </h3>
+
+                        <p>
+                            $48.20
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 07 -->
+
+                <div class="product-card"
+                    data-category="Watches"
+                    data-price="59.90"
+                    data-color="black">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-07.jpg"
+                            alt="Classic Watch"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Classic Watch
+                        </h3>
+
+                        <p>
+                            $59.90
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 08 -->
+
+                <div class="product-card"
+                    data-category="Men"
+                    data-price="45.00"
+                    data-color="blue">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-08.jpg"
+                            alt="Denim Jacket"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Denim Jacket
+                        </h3>
+
+                        <p>
+                            $45.00
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 09 -->
+
+                <div class="product-card"
+                    data-category="Shoes"
+                    data-price="68.50"
+                    data-color="black">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-09.jpg"
+                            alt="Leather Shoes"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Leather Shoes
+                        </h3>
+
+                        <p>
+                            $68.50
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 10 -->
+
+                <div class="product-card"
+                    data-category="Bag"
+                    data-price="42.90"
+                    data-color="grey">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-10.jpg"
+                            alt="Modern Backpack"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Modern Backpack
+                        </h3>
+
+                        <p>
+                            $42.90
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 11 -->
+
+                <div class="product-card"
+                    data-category="Men"
+                    data-price="29.99"
+                    data-color="white">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-11.jpg"
+                            alt="Casual Shirt"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Casual Shirt
+                        </h3>
+
+                        <p>
+                            $29.99
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 12 -->
+
+                <div class="product-card"
+                    data-category="Shoes"
+                    data-price="55.00"
+                    data-color="white">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-12.jpg"
+                            alt="Fashion Sneakers"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Fashion Sneakers
+                        </h3>
+
+                        <p>
+                            $55.00
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 13 -->
+
+                <div class="product-card"
+                    data-category="Bag"
+                    data-price="85.00"
+                    data-color="black">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-13.jpg"
+                            alt="Leather Backpack"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Leather Backpack
+                        </h3>
+
+                        <p>
+                            $85.00
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 14 -->
+
+                <div class="product-card"
+                    data-category="Watches"
+                    data-price="120.00"
+                    data-color="black">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-14.jpg"
+                            alt="Elegant Watch"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Elegant Watch
+                        </h3>
+
+                        <p>
+                            $120.00
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 15 -->
+
+                <div class="product-card"
+                    data-category="Shoes"
+                    data-price="65.00"
+                    data-color="white">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-15.jpg"
+                            alt="Classic Sneakers"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Classic Sneakers
+                        </h3>
+
+                        <p>
+                            $65.00
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 16 -->
+
+                <div class="product-card"
+                    data-category="Women"
+                    data-price="95.00"
+                    data-color="blue">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product-16.jpg"
+                            alt="Modern Fashion Coat"
+                        >
+
+                        <button class="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="quick-view">
+                            Quick View
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Modern Fashion Coat
+                        </h3>
+
+                        <p>
+                            $95.00
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 PAGINATION
+            ================================================== -->
+
+            <div class="pagination">
+
+                <a href="#" class="page active">
+                    1
+                </a>
+
+                <a href="#" class="page">
+                    2
+                </a>
+
+                <a href="#" class="page">
+                    3
+                </a>
+
+                <a href="#" class="page">
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+            </div>
+
+
+        </div>
+<div class="load-more-container">
+    <button class="load-more-button">
+        LOAD MORE
+    </button>
+</div>
+    </main>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-column">
+
+                    <h3>
+                        Categories
+                    </h3>
+
+                    <a href="#">Women</a>
+                    <a href="#">Men</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Watches</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Help
+                    </h3>
+
+                    <a href="#">Track Order</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">FAQs</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Get In Touch
+                    </h3>
+
+                    <p>
+                        Any questions? Let us know in store or contact us.
+                    </p>
+
+                    <div class="social-icons">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script src="shop.js"></script>
+
+</body>
+
+</html>
